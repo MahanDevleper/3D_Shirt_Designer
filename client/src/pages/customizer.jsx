@@ -64,8 +64,7 @@ const Customizer = () => {
       })
 
       const data = await response.json();
-      this.setState({base64File: "data:image/png;base64," + img});
-
+      console.log(data);
       handleDecals(type, `data:png;base64,${data.photo}`)
     } catch (error) {
       alert(error)
